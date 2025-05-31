@@ -1,11 +1,11 @@
 import { Button } from "@/components/ui/button";
+import HeroSection from "@/components/hero";
 
 export default function Home() {
   return (
     <div>
-      Hey! This is Home
-      <br />
-      <Button>HELLO</Button>
+      <div className="grid-background"></div>
+      <HeroSection/>
     </div>
   );
 }
