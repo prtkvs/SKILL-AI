@@ -2,7 +2,8 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import { Toaster } from "sonner";
-import Header from "@/components/header";
+// import Header from "@/app/Header";
+import Header from "./Header";
 import { ThemeProvider } from "@/components/theme-provider";
 import { dark } from "@clerk/themes";
 
@@ -11,6 +12,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "AI Career Coach",
   description: "",
+  icons: {
+    icon: "/favicon.ico", // or /favicon.png
+  },
 };
 
 export default function RootLayout({ children }) {
