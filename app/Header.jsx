@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic"; // ✅ ADD THIS LINE FIRST
+
 import React from "react";
 import { Button } from "../components/ui/button";
 import {
@@ -20,7 +22,9 @@ import Image from "next/image";
 import { checkUser } from "@/lib/checkUser";
 
 export default async function Header() {
-await checkUser().catch((e) => console.error("checkUser error:", e.message));
+  await checkUser().catch((e) =>
+    console.error("checkUser error:", e.message)
+  );
 
   return (
     <header className="fixed top-0 w-full border-b bg-background/80 backdrop-blur-md z-50 supports-[backdrop-filter]:bg-background/60">
@@ -57,7 +61,6 @@ await checkUser().catch((e) => console.error("checkUser error:", e.message));
                 <Button className="flex items-center gap-2">
                   <StarsIcon className="h-4 w-4" />
                   <span className="hidden md:block">Growth Tools</span>
-                  {/* <ChevronDown className="h-4 w-4" /> */}
                 </Button>
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end" className="w-48">
