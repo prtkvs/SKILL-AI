@@ -1,4 +1,4 @@
-export const dynamic = "force-dynamic"; // ✅ ADD THIS LINE FIRST
+export const dynamic = "force-dynamic"; 
 
 import React from "react";
 import { Button } from "../components/ui/button";
