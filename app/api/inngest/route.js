@@ -9,5 +9,5 @@ export const { GET, POST, PUT } = serve({
     /* your functions will be passed here later! */
     generateIndustryInsights,
   ],
-  
+  //inngest syncing done
 });
