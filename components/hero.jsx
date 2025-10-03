@@ -49,7 +49,7 @@ const HeroSection = () => {
           </Link>
           <Link href="https://github.com/prtkvs/AI-Career-Coach">
             <Button size="lg" variant="outline" className="px-8">
-              Watch Demo
+              Check Github
             </Button>
           </Link>
         </div>
