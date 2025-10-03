@@ -1,6 +1,7 @@
 {
   "name": "skillai",
   "version": "0.1.0",
+  "type": "module",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -12,7 +13,7 @@
   "dependencies": {
     "@clerk/nextjs": "^6.20.2",
     "@clerk/themes": "^2.2.48",
-    "@google/generative-ai": "^0.24.1",
+    "@google/genai": "^1.22.0",
     "@hookform/resolvers": "^5.0.1",
     "@prisma/client": "^6.8.2",
     "@radix-ui/react-accordion": "^1.2.11",
@@ -29,6 +30,7 @@
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "date-fns": "^4.1.0",
+    "dotenv": "^17.2.3",
     "html2pdf.js": "^0.10.3",
     "inngest": "^3.38.0",
     "lucide-react": "^0.511.0",
